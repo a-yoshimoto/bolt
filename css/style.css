@@ -211,15 +211,7 @@ footer {
   text-align: center;
 }
 
-.nav-button {
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  transition: .3s;
-  width: 185px;
-}
-
-.nav-button:hover {
+.fa:hover {
   background-color: #fff;
 }
 
@@ -227,9 +219,15 @@ footer {
   color: #74cfae;
   margin: 0 auto;
   padding: 40px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
+  width: 185px;
 }
 
 .bottom-text span {
   color: #fff;
   padding: 0;
+  width: 16px;
 }
