@@ -41,6 +41,39 @@ a {
   float: right;
 }
 
+#humberger {
+  position: relative;
+  height: 30px;
+  width: 50px;
+  padding: 6px;
+  display: inline-block;
+  display: none;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#humberger div {
+  position: absolute;
+  left: 13px;
+  height: 2px;
+  width: 24px;
+  background-color: #ddd;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+  top: 7px;
+}
+#humberger div:nth-of-type(2) {
+  top: 13px;
+}
+#humberger div:nth-of-type(3) {
+  top: 19px;
+}
+
 .header__right__botton {
   background-color: #74cfae;
   color:#fff;
@@ -125,11 +158,11 @@ a {
   font-size: 0;
 }
 
-.kill-space a:nth-child(3n) {
+.main__middle__contents a:nth-child(3n) {
   margin-right: 0;
 }
 
-.kill-space a:nth-last-child(-n+3) {
+.main__middle__contents a:nth-last-child(-n+3) {
   margin-top: 80px;
 }
 
@@ -232,4 +265,120 @@ footer {
   color: #fff;
   padding: 0;
   width: 16px;
+}
+
+
+@media (max-width: 1199px) {
+
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+ 
+  .main__top {
+    background-color: #74cfae;
+    padding: 50px 0 25px 0;
+  }
+
+  .main__top_flex {
+    display: block;
+    text-align: center;
+  }
+
+  .main__top__right {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+  }
+  
+  .main__middle__contents {
+    text-align: center;
+  }
+
+  .main__middle__content {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main__middle__contents a:nth-last-child(-n+3) {
+    margin-top: 0;
+  }
+
+  .main__middle__contents a:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .main__middle__contact {
+    margin: 80px 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main__middle__text {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .main__middle__button {
+    display: inline-block;
+    font-size: 12px;
+    margin: 40px 0 0 0;
+    padding: 14px 20px;
+  }
+
+  .skill-inner {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main__bottom-skill {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 88px 0;
+  }
+
+  .main__bottom {
+    padding: 70px 0 0 0;
+  }
+
+}
+
+@media (max-width: 766px) {
+
+  #humberger {
+    display: block;
+  }
+
+  .top-wrapper__title {
+    font-size: 80px;
+  }
+
+  .top-wrapper {
+    margin-top: 71px;
+    padding: 160px 0 130px 0;
+  }
+
+  .top-wrapper__title {
+    margin-bottom: 20px;
+  }
+  
+  .nav {
+    padding: 50px 15px 50px 15px;
+  }
+
+.nav .inner {
+  width: 100%;
+}
+
+  .sns-button {
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .header__right__botton {
+    display: none;
+  }
 }
