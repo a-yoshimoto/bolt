@@ -5,6 +5,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .clearfix:after {
   content: "";
   display: block;
@@ -217,11 +221,9 @@ footer {
 
 .sns-button {
   color: #74cfae;
-  margin: 0 auto;
   padding: 40px;
   box-sizing: border-box;
   display: inline-block;
-  text-align: center;
   transition: .3s;
   width: 185px;
 }
