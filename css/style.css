@@ -41,7 +41,7 @@ a {
   float: right;
 }
 
-main {
+.wapper {
   margin-top: 71px;
 }
 
@@ -346,7 +346,7 @@ footer {
     margin: 0 0 88px 0;
   }
 
-  .skill-inner div:last-child {
+  .skill-inner .main__bottom-skill:last-child {
     margin-bottom: 0;
   }
 
